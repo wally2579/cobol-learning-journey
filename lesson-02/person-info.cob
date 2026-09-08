@@ -1,0 +1,15 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PERSON-INFO.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+
+       01 WS-NAME PIC X(20).
+       01 WS-AGE  PIC 99.
+
+       PROCEDURE DIVISION.
+           MOVE "RANJEEV" TO WS-NAME.
+           MOVE 30 TO WS-AGE.
+           DISPLAY WS-NAME.
+           DISPLAY WS-AGE.
+           STOP RUN.
