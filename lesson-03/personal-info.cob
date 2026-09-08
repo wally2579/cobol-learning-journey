@@ -1,0 +1,27 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PERSONAL-INFO.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+
+       01 WS-NAME    PIC X(30).
+       01 WS-AGE     PIC 99.
+       01 WS-COUNTRY PIC X(30).
+
+       PROCEDURE DIVISION.
+
+           DISPLAY "PLEASE ENTER YOUR NAME: ".
+           ACCEPT WS-NAME.
+
+           DISPLAY "PLEASE ENTER YOUR AGE: ".
+           ACCEPT WS-AGE.
+
+           DISPLAY "PLEASE ENTER YOUR COUNTRY: ".
+           ACCEPT WS-COUNTRY.
+
+           DISPLAY "----- PERSONAL INFORMATION -----".
+           DISPLAY "NAME: " WS-NAME.
+           DISPLAY "AGE: " WS-AGE.
+           DISPLAY "COUNTRY: " WS-COUNTRY.
+
+           STOP RUN.
