@@ -1,0 +1,25 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PAY-CALCULATION.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+
+       01 WS-HOURS  PIC 99.
+       01 WS-RATE   PIC 9(3)V99.
+       01 WS-BONUS  PIC 9(4)V99.
+       01 WS-PAY    PIC 9(6)V99.
+
+       PROCEDURE DIVISION.
+
+           MOVE 40 TO WS-HOURS.
+           MOVE 25.50 TO WS-RATE.
+           MOVE 100.00 TO WS-BONUS.
+
+           COMPUTE WS-PAY = (WS-HOURS * WS-RATE) + WS-BONUS.
+
+           DISPLAY "HOURS: " WS-HOURS.
+           DISPLAY "HOURLY RATE: " WS-RATE.
+           DISPLAY "BONUS: " WS-BONUS.
+           DISPLAY "TOTAL PAY: " WS-PAY.
+
+           STOP RUN.
